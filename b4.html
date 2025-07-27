@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Interactive Element States</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
+        .state {
+            margin-bottom: 20px;
+        }
+
+        .element {
+            display: inline-block;
+            padding: 5px 15px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+        }
+
+        div:hover:first-child {
+            background-color: yellow;
+            font-size: 18px;
+        }
+
+        div:active:last-child {
+            background-color: red;
+            color: red;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="state">Phần tử 1</div>
+        <div class="state">Phần tử 2</div>
+        <div class="state">Phần tử 3</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thử thách Pseudo Elements</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .text-container {
+            font-size: 30px;
+            line-height: 1.5;
+        }
+
+        .text-container::first-letter {
+            font-size: 150px;
+            color: red;
+            float: left;
+            line-height: 0.8;
+            margin-right: 10px;
+        }
+
+        .text-container::first-line {
+            color: red;
+        }
+
+        .text-container::after {
+            content: "Làm web với HTML";
+            display: block;
+            color: blue;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text-container">
+            HTML (viết tắt của từ Hypertext Markup Language, hay là "Ngôn ngữ Đánh dấu Siêu văn bản") là một ngôn ngữ
+            đánh dấu được thiết kế ra để tạo nên các trang web trên World Wide Web. Nó có thể được trợ giúp bởi các công
+            nghệ như CSS và các ngôn ngữ kịch bản giống như JavaScript.
+            Các trình duyệt web nhận tài liệu HTML từ một web server hoặc một kho lưu trữ cục bộ và render tài liệu đó
+            thành các trang web đa phương tiện. HTML mô tả cấu trúc của một trang web về mặt ngữ nghĩa và các dấu hiệu
+            ban đầu được bao gồm cho sự xuất hiện của tài liệu.
+        </div>
+    </div>
+</body>
+
+</html>
